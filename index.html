@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Step by step - Example</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="vendor/fontawesome-free-5.12.1-web/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"/>	
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="card bg-light mb-3">
+
+			<div class="card-header">
+				<div class="row">
+					<div class="col-sm-9">
+						<h5 class="titulo-step-by-step  js-titulo-step-by-step">Step by step</h5>
+					</div>					
+				</div>
+			</div>
+
+			<div class="card-body">
+				<form>				
+					<div id="step1" class="etapa  js-etapa">
+						<h1 class="text-center display-4 p-4">
+							<label for="itemStep1">Selecione o item da etapa 1</label>
+						</h1>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="form-group">																
+									<select id="itemStep1" class="form-control js-step1">	                    			<option>Selecione</option>			                        			
+				                    	<option value="1">Item 1</option>			                        		
+				                    	<option value="2">Item 2</option>			                        		
+				                    	<option value="3">Item 3</option>			                        		
+				                    	<option value="4">Item 4</option>			                        		
+				                    </select>						                    							
+					            </div>
+							</div>						
+						</div>
+					</div>
+
+					<div id="step2" class="etapa  js-etapa">
+						<h3 class="text-center display-4 p-4">
+							<label for="itemStep2">Selecione o item da etapa 2</label>							
+						</h3>
+
+						<div class="row">
+							<div class="col-sm-12  container-campos--etapa2  js-container-campos--etapa2">
+								<div class="form-group">																	<select id="itemStep2" class="form-control  js-step2">
+										<option value="">Selecione</option>				
+										<option value="1">Item 1</option>			                        		
+				                    	<option value="2">Item 2</option>			                        		
+				                    	<option value="3">Item 3</option>			                        		
+				                    	<option value="4">Item 4</option>		 										
+				                    </select>																			
+				                </div>
+							</div>				
+
+							<div class="col-sm-6  container-campos--subitem-etapa2  js-container-campos--subitem-etapa2">
+								<div class="form-group">
+									<label for="subitemStep2" class="label-subitem-step2  js-label-subitem-step2"><i class="fas fa-arrow-down"></i></label>
+									<select id="subitemStep2" class="form-control  js-subitem-step2">
+										<option value="">Agora, selecione um subitem</option>		
+										<option value="1">Subitem 1</option>			                        	
+			                    		<option value="2">Subitem 2</option>			                        	
+			                    		<option value="3">Subitem 3</option>			                        	
+			                    		<option value="4">Subitem 4</option>		 								
+			                    	</select>														            		
+				            	</div>
+							</div>						
+						</div>
+					</div>
+
+					<div id="step3" class="etapa  js-etapa">
+						<h3 class="text-center display-4 p-4">							
+							<label for="itemStep3">Selecione o item da etapa 3</label>							  
+						</h3>
+
+						<div class="row">
+							<div class="col-sm-12  container-campos--etapa3  js-container-campos--etapa3">	
+								<div class="form-group">																	<select id="itemStep3" class="form-control  js-step3">
+										<option value="">Selecione</option>
+										<option value="1">Item 1</option>			                        		
+				                    	<option value="2">Item 2</option>			                        		
+				                    	<option value="3">Item 3</option>			                        		
+				                    	<option value="4">Item 4</option>												
+				                    </select>																            
+				                </div>							
+							</div>											
+						</div>									
+					</div>
+
+					<div id="step4" class="etapa  js-etapa">
+						<h3 class="text-center display-4 p-4">
+							<label for="itemStep4" class="js-label-item-step4">Selecione o item da etapa 4</label>
+						</h3>
+
+						<div class="row">
+							<div class="col-sm-12  container-campos  js-container-campos--etapa4">
+								<div class="form-group">									
+									<select id="itemStep4" class="form-control  js-step4">				
+										<option>Selecione</option>
+										<option value="1">Item 1</option>			                        		
+			                    		<option value="2">Item 2</option>			                        		
+			                    		<option value="3">Item 3</option>			                        		
+			                    		<option value="4">Item 4</option>	
+									</select>																		
+								</div>
+							</div>																			
+							
+						</div>														
+					</div>
+
+					<div id="salvando" class="etapa etapa--final  js-etapa-final">
+						<h1 class="text-center display-4">
+							Salvando suas configurações...													
+						</h1>											
+
+						<div class="row">
+							<div class="col-sm-12">
+					            <span class="spinner spinner--salvando js-spinner--salvando"></span>
+					            <span class="icone-salvo-sucesso"><i class="fas fa-check-circle"></i></span>					            					            					           
+							</div>						
+						</div>
+					</div>
+
+					<div class="row">						
+					  	<div class="col-sm-12 text-right">					  	  
+							<button type="button" class="btn  btn-secondary  btn-anterior  js-btn-anterior"><i class="fas fa-long-arrow-alt-left"></i> Anterior</button>	
+						  	<button type="button" class="btn  btn-primary  btn-proximo  js-btn-proximo">Próximo <i class="fas fa-arrow-right"></i></button>					    					  
+					  	</div>
+					</div>									
+
+					<div class="text-center  pt-4">
+						<span class="indicador-etapa  js-indicador-etapa"></span>
+						<span class="indicador-etapa  js-indicador-etapa"></span>
+						<span class="indicador-etapa  js-indicador-etapa"></span>
+						<span class="indicador-etapa  js-indicador-etapa"></span>
+					</div>										
+				</form>
+			</div>			
+		</div>
+	</div>
+
+<script src="vendor/jquery-1.11.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
